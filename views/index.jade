@@ -1,0 +1,32 @@
+extends layout
+
+block body
+  div(ng-controller='AppCtrl')
+    h2 Star Wars Sequel
+    ul.menu
+      li
+        a(href='film/1') Film 1
+      li
+        a(href='film/2') Film 2
+      li
+        a(href='film/3') Film 3
+      li
+        a(href='film/4') Film 4
+      li
+        a(href='film/5') Film 5
+      li
+        a(href='film/6') Film 6
+      li
+        a(href='film/7') Film 7
+    div(ng-view)
+
+    div
+      | by : Arfan. Febriyanto
+
+  script(src='js/lib/angular/angular.js')
+  script(src='js/app.js')
+  script(src='js/services.js')
+  script(src='js/controllers.js')
+  script(src='js/filters.js')
+  script(src='js/directives.js')
+  script(src='js/factory.js')

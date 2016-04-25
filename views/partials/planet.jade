@@ -1,0 +1,17 @@
+p Planet {{ planet.name }}
+p Climate 	: {{ planet.climate }}
+p Created 	: {{ planet.created }}
+p Diameter 	: {{ planet.diameter }}
+p Edited	: {{ planet.edited }}
+p Film		:
+div(ng-repeat="film in planet.films")
+	div - <a href='{{ film.url | getId }}'> {{ film.title }} </a>
+p Gravity	: {{ planet.gravity }}
+p Orbital Period	: {{ planet.orbital_period }}
+p Population		: {{ planet.population }}
+p Residents	:
+div(ng-repeat="residents in planet.residents")
+	div - <a href='{{ residents.url | getId }}'> {{ residents.name }} </a>
+p Rotation Period	: {{ planet.rotation_period }}
+p Surface Water		: {{ planet.surface_water }}
+p Terrain	: {{ planet.terrain }}

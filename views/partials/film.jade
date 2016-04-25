@@ -1,0 +1,23 @@
+p Film {{ film.title }}
+p Characters	:
+div(ng-repeat="residents in film.characters")
+	div - <a href='{{ residents.url | getId }}'> {{ residents.name }} </a>
+p Director 	: {{ film.director }}
+p Created 	: {{ film.created }}
+p Episode Id: {{ film.episode_id }}
+p Opening Crawl	: 
+p {{ film.opening_crawl }}
+p Planets		:
+div(ng-repeat="planet in film.planets")
+	div - <a href='{{ planet.url | getId }}'> {{ planet.name }} </a>
+p Producer	: {{ film.producer }}
+p Release Date		: {{ film.release_date }}
+p Species 		:
+div(ng-repeat="species in film.species")
+	div - <a href='{{ species.url | getId }}'> {{ species.name }} </a>
+p Starships 		:
+div(ng-repeat="starships in film.starships")
+	div - <a href='{{ starships.url | getId }}'> {{ starships.name }} </a>
+p Vehicles 		:
+div(ng-repeat="vehicles in film.vehicles")
+	div - <a href='{{ vehicles.url | getId }}'> {{ vehicles.name }} </a>

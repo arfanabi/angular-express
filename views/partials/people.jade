@@ -1,0 +1,23 @@
+p {{ people.name }}
+p Birth Year 	: {{ people.birth_year }}
+p Created		: {{ people.created }}
+p Edited		: {{ people.edited }}
+p Eye Color		: {{ people.eye_color}}
+p Film			:
+div(ng-repeat="film in people.films")
+	div - <a href='{{ film.url | getId }}'> {{ film.title }} </a>
+p Gender		: {{ people.gender }}
+p Hair Color	: {{ people.hair_color }}
+p Height		: {{ people.height }}
+p Home World	: <a href='{{ people.homeworld[0].url | getId }}'> {{ people.homeworld[0].name }} </a>
+p Mass			: {{ people.mass }}
+p Skin Color	: {{ people.skin_color}}
+p Species 		:
+div(ng-repeat="species in people.species")
+	div - <a href='{{ species.url | getId }}'> {{ species.name }} </a>
+p Starships 	:
+div(ng-repeat="starships in people.starships")
+	div - <a href='{{ starships.url | getId }}'> {{ starships.name }} </a>
+p Vehicle		:
+div(ng-repeat="vehicles in people.vehicles")
+	div - <a href='{{ vehicles.url | getId }}'> {{ vehicles.name }} </a>

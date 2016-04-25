@@ -1,0 +1,20 @@
+p {{ vehicle.name }}
+p Created		: {{ vehicle.created }}
+p Edited		: {{ vehicle.edited }}
+p Cargo Capacity: {{ vehicle.cargo_capacity }}
+p Consumables	: {{ vehicle.consumables }}
+p Cost in Credits: {{ vehicle.cost_in_credits }}
+p Crew			: {{ vehicle.crew }}
+p Film			:
+div(ng-repeat="film in vehicle.films")
+	div - <a href='{{ film.url | getId }}'> {{ film.title }} </a>
+p Hyperdrive Rating : {{ vehicle.hyperdrive_rating }}
+p Length		: {{ vehicle.length }}
+p Manufacturer	: {{ vehicle.manufacturer }}
+p Max Atmosphering Speed	:	{{ vehicle.max_atmosphering_speed}}
+p Model			: {{ vehicle.model }}
+p Passengers	: {{ vehicle.passengers }}
+p Pilots 		:
+div(ng-repeat="pilot in vehicle.pilots")
+	div - <a href='{{ pilot.url | getId }}'> {{ pilot.name }} </a>
+p Vehicle Class : {{ vehicle.vehicle_class}}

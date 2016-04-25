@@ -1,0 +1,17 @@
+p {{ species.name }}
+p Average Height 	: {{ species.average_height }}
+p Average Lifespan	: {{ species.average_lifespan }}
+p Created		: {{ species.created }}
+p Designation	: {{ species.designation}}
+p Edited		: {{ species.edited }}
+p Eye Color		: {{ species.eye_colors}}
+p Film			:
+div(ng-repeat="film in species.films")
+	div - <a href='{{ film.url | getId }}'> {{ film.title }} </a>
+p Hair Color	: {{ species.hair_colors }}
+p Home World	: <a href='{{ species.homeworld[0].url | getId }}'> {{ species.homeworld[0].name }} </a>
+p Language		: {{ species.language }}
+p People 		:
+div(ng-repeat="people in species.people")
+	div - <a href='{{ people.url | getId }}'> {{ people.name }} </a>
+p Skin Color	: {{ species.skin_colors }}

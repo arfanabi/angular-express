@@ -1,0 +1,21 @@
+p {{ spaceship.name }}
+p MGLT		 	: {{ spaceship.MGLT }}
+p Created		: {{ spaceship.created }}
+p Edited		: {{ spaceship.edited }}
+p Cargo Capacity: {{ spaceship.cargo_capacity }}
+p Consumables	: {{ spaceship.consumables }}
+p Cost in Credits: {{ spaceship.cost_in_credits }}
+p Crew			: {{ spaceship.crew }}
+p Film			:
+div(ng-repeat="film in spaceship.films")
+	div - <a href='{{ film.url | getId }}'> {{ film.title }} </a>
+p Hyperdrive Rating : {{ spaceship.hyperdrive_rating }}
+p Length		: {{ spaceship.length }}
+p Manufacturer	: {{ spaceship.manufacturer }}
+p Max Atmosphering Speed	:	{{ spaceship.max_atmosphering_speed}}
+p Model			: {{ spaceship.model }}
+p Passengers	: {{ spaceship.passengers }}
+p Pilots 		:
+div(ng-repeat="pilot in spaceship.pilots")
+	div - <a href='{{ pilot.url | getId }}'> {{ pilot.name }} </a>
+p Starships Class 	: {{ spaceship.starship_class}}
