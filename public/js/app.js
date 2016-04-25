@@ -36,7 +36,7 @@ config(function ($routeProvider, $locationProvider) {
       controller: 'speciesCtrl'
     }).
     otherwise({
-      redirectTo: '/view1'
+      redirectTo: '/film/1'
     });
 
   $locationProvider.html5Mode(true);
